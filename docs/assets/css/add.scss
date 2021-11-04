@@ -62,6 +62,14 @@ font-weight: $w;
 	overflow: hidden;
 }
 
+.event_bannar a,
+#bannar_erea a {
+	transition: all .3s;
+	 &:hover {
+	 	opacity: .8;
+	 }
+}
+
 .btn-line {
 	transition: all .3s;
 }
@@ -78,8 +86,33 @@ font-weight: $w;
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		position: absolute;
+		top: 10px;
+		right: 20px;
+
+		@media screen and (max-width:768px) {
+			width: 11px;
+			height: 12px;
+			top: 10px;
+			right: 10px;
+		}
+	}
+}
+
+.btn-wh {
+	transition: all .3s;
+	position: relative;
+
+	&.gb:before {
+		content: "";
+		background-image: url("../img/icon_link.svg");
+		display: block;
+		width: 15px;
+		height: 16px;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		position: absolute;
 		top: 20px;
-		right: 50px;
+		right: 20px;
 
 		@media screen and (max-width:768px) {
 			width: 11px;
@@ -157,19 +190,25 @@ aside{
 	.btn-pop:hover {
 		box-shadow:  		0px 0px 0  #2d1c60;
 		-webkit-box-shadow:	0px 0px 0  #2d1c60;
-		transform:translate(6px,6px);
+		transform:translate(6px,6px) !important;
 	}
 
 	.btn-line:hover {
 		box-shadow:  		0px 0px 0  #2d1c60;
 		-webkit-box-shadow:	0px 0px 0  #2d1c60;
-		transform:translate(6px,6px);
+		transform:translate(6px,6px) !important;
 	}
 
 	.btn-def:hover {
 		box-shadow:  		0px 0px 0  #2d1c60;
 		-webkit-box-shadow:	0px 0px 0  #2d1c60;
-		transform:translate(6px,6px);
+		transform:translate(6px,6px) !important;
+	}
+
+	.btn-wh:hover {
+		box-shadow:  		0px 0px 0  #fdfa00;
+		-webkit-box-shadow:	0px 0px 0  #fdfa00;
+		transform:translate(6px,6px) !important;
 	}
 }
 

@@ -87,6 +87,9 @@ $(window).on('load scroll resize', function() {
         setTimeout(function() {
             $(".main-contents #how-to-play .contents .con-01 ul li:nth-child(2)").addClass("anim-active");
         }, 400);
+        setTimeout(function() {
+            $(".main-contents #how-to-play .contents .con-01 ul li:nth-child(3)").addClass("anim-active");
+        }, 600);
     }
     if(st > $(".main-contents #how-to-play .contents .con-02").offset().top - (wh/3*2)) {
         $(".main-contents #how-to-play .contents .con-02").addClass("anim-active");

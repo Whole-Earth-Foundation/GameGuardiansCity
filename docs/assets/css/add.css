@@ -12,6 +12,16 @@
   overflow: hidden;
 }
 
+.event_bannar a,
+#bannar_erea a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.event_bannar a:hover,
+#bannar_erea a:hover {
+  opacity: 0.8;
+}
+
 .btn-line {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -31,11 +41,37 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   position: absolute;
-  top: 20px;
-  right: 50px;
+  top: 10px;
+  right: 20px;
 }
 @media screen and (max-width: 768px) {
   .btn-def:before {
+    width: 11px;
+    height: 12px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.btn-wh {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-wh.gb:before {
+  content: "";
+  background-image: url("../img/icon_link.svg");
+  display: block;
+  width: 15px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .btn-wh.gb:before {
     width: 11px;
     height: 12px;
     top: 14px;
@@ -112,6 +148,13 @@ aside a:hover {
   .btn-def:hover {
     box-shadow: 0px 0px 0 #2d1c60;
     -webkit-box-shadow: 0px 0px 0 #2d1c60;
+    -webkit-transform: translate(6px, 6px) !important;
+            transform: translate(6px, 6px) !important;
+  }
+
+  .btn-wh:hover {
+    box-shadow: 0px 0px 0 #fdfa00;
+    -webkit-box-shadow: 0px 0px 0 #fdfa00;
     -webkit-transform: translate(6px, 6px) !important;
             transform: translate(6px, 6px) !important;
   }
