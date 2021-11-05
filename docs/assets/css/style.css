@@ -302,6 +302,18 @@ p:last-child {
   overflow: hidden;
 }
 
+.twitter-link {
+  color: #000;
+  padding-left: 20px;
+  font-size: 1.4rem;
+}
+.twitter-link a {
+  border-bottom: 1px solid #2d1c60;
+}
+.twitter-link a:hover {
+  opacity: 0.8;
+}
+
 .site-header {
   position: relative;
 }
@@ -805,6 +817,18 @@ p:last-child {
 .main-contents #how-to-join .contents .content ul.list-step li:nth-child(3) {
   margin-top: -150px;
 }
+.main-contents #how-to-join .contents .content ul.list-step li .twitter-link {
+  color: #fff;
+}
+.main-contents #how-to-join .contents .content ul.list-step li .twitter-link a {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #f5ec00;
+  text-decoration: underline;
+}
+.main-contents #how-to-join .contents .content ul.list-step li .twitter-link a:hover {
+  opacity: 0.75;
+}
 @media screen and (max-width: 1350px) {
   .main-contents #how-to-join .contents .content ul.list-step li {
     width: 45%;
@@ -1043,6 +1067,10 @@ p:last-child {
   margin: auto;
   padding: 0 50px;
   margin-bottom: 40px;
+}
+.main-contents #story .twitter-link {
+  text-align: center;
+  padding-top: 15px !important;
 }
 .main-contents #story .contents {
   max-width: 1288px;

@@ -337,6 +337,23 @@ p{
 .site-wrap{
 	overflow: hidden;
 }
+
+
+.twitter-link {
+    color: #000;
+    padding-left: 20px;
+    font-size: 1.4rem;
+
+    a {
+      border-bottom: 1px solid #2d1c60;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+
 .site-header{
 	position: relative;
 	.inner{
@@ -388,6 +405,8 @@ p{
 	.copy {
 		padding-left: 20px;
 	}
+
+  
 
 
 
@@ -870,6 +889,18 @@ p{
 								margin-top: -150px;
 							}
 
+							.twitter-link {
+								color: #fff;
+								a {
+									transition: all .25s ease;
+									color: #f5ec00;
+									text-decoration: underline;
+									&:hover {
+										opacity: .75;
+									}
+								}
+							}
+
 							@media screen and (max-width:1350px) {
 
 								width: 45%;
@@ -1138,6 +1169,11 @@ p{
 					padding: 0 50px;
 					margin-bottom: 40px;
 				}
+			}
+
+			.twitter-link {
+				text-align: center;
+				padding-top: 15px !important;
 			}
 			.contents{
 				max-width: 1288px;

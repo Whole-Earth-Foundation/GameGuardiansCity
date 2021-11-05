@@ -75,7 +75,8 @@
 .site-header .inner .branding > div .txt > span,
 .site-header .inner .branding .site-title,
 .site-header .inner .btn-line,
-.site-header .inner .copy {
+.site-header .inner .copy, 
+.site-header .inner .twitter-link { 
     opacity: 0;
     transform: translateY(50px);
     &.anim-active {

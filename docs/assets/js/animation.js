@@ -30,6 +30,7 @@ $(window).on('load', function() {
     setTimeout(function() {
         $(".site-header .inner .copy").addClass("anim-active");
         $(".site-header .nav-scroll").addClass("anim-active");
+        $(".site-header .twitter-link").addClass("anim-active");
     }, 900);
 });
 

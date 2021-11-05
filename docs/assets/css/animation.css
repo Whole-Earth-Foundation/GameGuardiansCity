@@ -99,7 +99,8 @@
 .site-header .inner .branding > div .txt > span,
 .site-header .inner .branding .site-title,
 .site-header .inner .btn-line,
-.site-header .inner .copy {
+.site-header .inner .copy,
+.site-header .inner .twitter-link {
   opacity: 0;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
@@ -107,7 +108,8 @@
 .site-header .inner .branding > div .txt > span.anim-active,
 .site-header .inner .branding .site-title.anim-active,
 .site-header .inner .btn-line.anim-active,
-.site-header .inner .copy.anim-active {
+.site-header .inner .copy.anim-active,
+.site-header .inner .twitter-link.anim-active {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
